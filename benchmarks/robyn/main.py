@@ -36,8 +36,7 @@ def h(request):
 
 @app.get("/json")
 def json_response():
-    some_lise = [i for i in range(1000000)]
-    return orjson.dumps(some_dummy_data_dict)
+    return some_dummy_data_dict
 
 # function thawill serve static files from /frontend/dist/assets
 @app.get("/assets/:file_path")
